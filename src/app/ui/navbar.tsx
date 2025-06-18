@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md px-6 py-4 flex items-center justify-between">
+    <nav className="fixed top-0 px-12 py-4 left-0 w-full z-50 bg-white shadow-md flex items-center justify-between">
       {/* Logo */}
       <div className="text-2xl font-bold text-blue-600">
         <Link href="/">Quick Wheel</Link>
@@ -21,11 +21,12 @@ export default function Navbar() {
         <Link href="#services" className="hover:text-blue-500">
           Services
         </Link>
-        <Link href="#contact" className="hover:text-blue-500">
-          Contact
-        </Link>
         <Link href="#pricing" className="hover:text-blue-500">
           Pricing
+        </Link>
+
+        <Link href="#contact" className="hover:text-blue-500">
+          Contact
         </Link>
       </div>
 
@@ -46,11 +47,12 @@ export default function Navbar() {
           <Link href="#services" className="hover:text-blue-500">
             Services
           </Link>
-          <Link href="#contact" className="hover:text-blue-500">
-            Contact
-          </Link>
           <Link href="#pricing" className="hover:text-blue-500">
             Pricing
+          </Link>
+
+          <Link href="#contact" className="hover:text-blue-500">
+            Contact
           </Link>
         </div>
       )}
