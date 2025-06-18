@@ -1,28 +1,40 @@
 "use client";
 
+import WhatsAppButton from "./Whatsapp";
+
 export default function Contact() {
   return (
     <section className="bg-gray-100 py-20 w-full px-6" id="contact">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold mb-4 text-center">Get in Touch</h2>
-        <p className="text-lg mb-8 text-center">
+      <div className="max-w-4xl mx-auto text-center">
+        {/* Heading */}
+        <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
+        <p className="text-lg mb-10 text-gray-700">
           Have questions about booking, pricing, or fleet availability? Our team
           is here to help.
         </p>
-        <ul className="space-y-6 text-gray-700 text-lg text-center">
-          <li>
-            📍 <strong>Address:</strong> Nairobi, Kenya
-          </li>
-          <li>
-            📞 <strong>Phone:</strong> +254 715 423188
-          </li>
-          <li>
+
+        {/* Contact Info */}
+        <div className="space-y-6 text-lg text-gray-700">
+          {/* WhatsApp */}
+          <div>
+            <WhatsAppButton />
+          </div>
+
+          {/* Email */}
+          <div>
             ✉️ <strong>Email:</strong> info@quickwheel.co.ke
-          </li>
-          <li>
+          </div>
+
+          {/* Address */}
+          <div>
+            📍 <strong>Address:</strong> Nairobi, Kenya
+          </div>
+
+          {/* Hours */}
+          <div>
             ⏰ <strong>Working Hours:</strong> Mon – Sat, 8:00am – 6:00pm
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -6,7 +6,7 @@ import Services from "./components/Services";
 
 export default function Home() {
   return (
-    <div className="grid items-center justify-items-center mt-18">
+    <div className="grid items-center justify-items-center mt-16">
       <Hero />
       <Services />
       <About />

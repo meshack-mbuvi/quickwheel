@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import WhatsAppButton from "./Whatsapp";
 
 export default function Hero() {
   return (
@@ -19,11 +19,9 @@ export default function Hero() {
           Renting a car just got easier — flexible, affordable rentals for days
           or weeks.
         </p>
-        <Link
-          href="#contact"
-          className="mt-8 px-6 py-3 bg-red-500 hover:bg-red-600 text-white text-lg font-semibold rounded-lg transition duration-200">
-          Book Now
-        </Link>
+        <p className="mt-8">
+          <WhatsAppButton />
+        </p>
       </div>
     </section>
   );
